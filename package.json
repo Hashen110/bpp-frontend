@@ -1,0 +1,62 @@
+{
+  "name": "bpp-frontend",
+  "version": "0.0.1",
+  "description": "Bitcoin Price Prediction Frontend",
+  "productName": "Bitcoin Price Prediction Frontend",
+  "keywords": [
+    "bitcoin",
+    "price",
+    "prediction",
+    "frontend"
+  ],
+  "homepage": "https://github.com/Hashen110/bpp-frontend#readme",
+  "bugs": {
+    "url": "https://github.com/Hashen110/bpp-frontend/issues"
+  },
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Hashen Abeysekara",
+    "email": "hashen.abeysekara123@gmail.com",
+    "url": "https://github.com/Hashen10"
+  },
+  "repository": {
+    "url": "https://github.com/Hashen110/bpp-frontend.git",
+    "type": "git"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "quasar dev",
+    "build": "quasar build"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.6",
+    "axios": "^1.5.0",
+    "chart.js": "^4.4.2",
+    "core-js": "^3.32.2",
+    "dotenv": "^16.3.1",
+    "klinecharts": "^9.5.1",
+    "quasar": "^2.12.7",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.22.15",
+    "@quasar/app-webpack": "^3.11.0",
+    "eslint": "^8.49.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-security": "^1.7.1",
+    "eslint-plugin-vue": "^9.17.0",
+    "eslint-webpack-plugin": "^3.2.0"
+  },
+  "private": true,
+  "browserslist": [
+    "cover 100%"
+  ],
+  "engines": {
+    "node": ">= 16.22.1",
+    "npm": ">= 8.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
