@@ -4,11 +4,12 @@
       <div class="col-12 col-md-6">
         <div class="text-h4 text-center">Login</div>
         <div class="q-pa-md">
-          <q-form @submit="onLoginSubmit" @reset="onLoginReset" class="q-gutter-md">
+          <q-form @submit="onLoginSubmit" @reset="onLoginReset" class="q-gutter-md" id="loginForm">
             <q-input
               v-model="loginForm.username"
               :model-value="loginForm.username"
               label="Username"
+              name="loginUsername"
               outlined
             />
             <q-input
@@ -16,10 +17,11 @@
               :model-value="loginForm.password"
               label="Password"
               type="password"
+              name="loginPassword"
               outlined
             />
             <div>
-              <q-btn label="Login" type="submit" color="primary"/>
+              <q-btn label="Login" type="submit" color="primary" id="loginButton" />
               <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
             </div>
           </q-form>
@@ -28,17 +30,19 @@
       <div class="col-12 col-md-6">
         <div class="text-h4 text-center">Register</div>
         <div class="q-pa-md">
-          <q-form @submit="onRegisterSubmit" @reset="onRegisterReset" class="q-gutter-md">
+          <q-form @submit="onRegisterSubmit" @reset="onRegisterReset" class="q-gutter-md" id="registerForm">
             <q-input
               v-model="registerForm.firstname"
               :model-value="registerForm.firstname"
               label="First Name"
+              name="registerFirstname"
               outlined
             />
             <q-input
               v-model="registerForm.lastname"
               :model-value="registerForm.lastname"
               label="Last Name"
+              name="registerLastname"
               outlined
             />
             <q-input
@@ -46,12 +50,14 @@
               :model-value="registerForm.email"
               label="Email"
               type="email"
+              name="registerEmail"
               outlined
             />
             <q-input
               v-model="registerForm.username"
               :model-value="registerForm.username"
               label="Username"
+              name="registerUsername"
               outlined
             />
             <q-input
@@ -59,10 +65,11 @@
               :model-value="registerForm.password"
               label="Password"
               type="password"
+              name="registerPassword"
               outlined
             />
             <div>
-              <q-btn label="Register" type="submit" color="primary"/>
+              <q-btn label="Register" type="submit" color="primary" id="registerButton" />
               <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
             </div>
           </q-form>

@@ -27,7 +27,8 @@
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
-    "build": "quasar build"
+    "build": "quasar build",
+    "cy:open": "cypress open"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.6",
@@ -43,6 +44,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.15",
     "@quasar/app-webpack": "^3.11.0",
+    "cypress": "^13.9.0",
     "eslint": "^8.49.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.28.1",
